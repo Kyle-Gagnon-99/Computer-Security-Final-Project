@@ -22,7 +22,7 @@ def wsgi_app():
 if __name__ == '__main__':
     PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
     STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static').replace('\\', '/')
-    HOST = os.environ.get('SERVER_HOST', '18.223.133.77')
+    HOST = os.environ.get('SERVER_HOST', 'ec2-18-223-133-77.us-east-2.compute.amazonaws.com')
     try:
         PORT = int(os.environ.get('SERVER_PORT', '80'))
     except ValueError:
